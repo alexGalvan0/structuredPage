@@ -3,6 +3,19 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+h1{
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
 body{
   background-color: #F4EDEA;
 }
@@ -28,16 +41,18 @@ nav {
   min-width: 10rem;
 }
 
-nav > ul > a {
+a {
+  text-decoration: none;
+}
+
+.nav-item {
   color: white;
   list-style: none;
-  text-decoration: none;
 }
 
 .nav-item:hover {
   text-decoration: underline;
   cursor: pointer;
-  color: black;
 }
 
 .nav-icon {
@@ -70,8 +85,10 @@ main{
 
 .bird-info {
   border:5px solid #06BCC1;
+  background-color: white;
   border-radius: 4px;
   padding: 5px;
+  width: 45%;
 }
 
 
@@ -85,8 +102,11 @@ main{
 }
 .bird {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap:1rem;
+  margin-left: 2rem;
 }
 
 aside {
@@ -123,6 +143,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: relative;
 }
 bird-picker {
@@ -135,6 +156,14 @@ bird-picker {
   justify-content: flex-end;
 }
 
+.footer-link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
 .hidden {
   display: none;
+}
+span {
+  margin-left: 5px;
 }
