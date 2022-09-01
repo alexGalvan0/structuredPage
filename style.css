@@ -1,11 +1,12 @@
 *{
   margin: 0;
-  font-family: 'Montserrat', sans-serif;}
+  font-family: 'Montserrat', sans-serif;
+}
 
 nav {
   display: flex;
   flex-direction: row;
-  background-color: #42858C;
+  background-color: #91C7B1;
   height: 4rem;
   margin-bottom: 10rem;
 }
@@ -62,11 +63,63 @@ main{
   display: flex;
   justify-content: center;
   margin: 0 10rem;
+  margin-left: 25rem;
+  margin-bottom: 35rem;
 
 }
 .bird {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
   gap:1rem;
+}
+
+aside {
+  position: absolute;
+  height: 50%;
+  width: 20rem;
+  background-color: #F1F7ED;
+  border-radius: 4px;
+}
+
+.button {
+  border: none;
+  list-style: none;
+  background-color: #F1F7ED;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.bird-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+footer {
+  background-color: #B33951;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content-and-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  justify-content: flex-end;
+}
+
+.hidden {
+  display: none;
 }

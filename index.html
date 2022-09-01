@@ -22,33 +22,42 @@
     </ul>
   </nav>
 
-  <main>
-    <div class="bird bird1">
-      <img class="bird-image bird-img-1" src="./images/favorite-1_th.jpg" alt="Bird Picture">
-      <div class="bird-info">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quisquam iste maxime pariatur consequuntur error possimus dicta amet autem totam velit incidunt quod illum molestiae exercitationem explicabo minus nobis sunt?</p>
-      </div>
-    </div>
+  <aside>
+  <ul class="bird-selector">
+    <label for="bird1-pick"><input type="radio" name="bird-picked" value="bird1-pick" class="bird-picker" checked="checked" onclick="displayBird()">Bird1</label>
+    <label for="bird2-pick"><input type="radio" name="bird-picked" value="bird2-pick" class="bird-picker" onclick="displayBird()">Bird2</label>
+    <label for="bird3-pick"><input type="radio" name="bird-picked" value="bird3-pick" class="bird-picker" onclick="displayBird()">Bird3</label>
+  </ul>
+  </aside>
 
-    <div class="bird bird2">
-      <img class="bird-image" src="images/favorite-2_th.jpg" alt="Bird Picture">
-      <div class="bird-info">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quisquam iste maxime pariatur consequuntur error possimus dicta amet autem totam velit incidunt quod illum molestiae exercitationem explicabo minus nobis sunt?</p>
-      </div>
-    </div>
-      
-
-      <div class="bird bird3">
-        <img class="bird-image" src="./images/favorite-1_th.jpg" alt="Bird Picture">
+  <div class="content-and-footer">
+    <main>
+      <div id="bird1-pick" class="bird bird1 ">
+        <img class="bird-image bird-img-1" src="./images/favorite-1_th.jpg" alt="Bird Picture">
         <div class="bird-info">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quisquam iste maxime pariatur consequuntur error possimus dicta amet autem totam velit incidunt quod illum molestiae exercitationem explicabo minus nobis sunt?</p>
         </div>
       </div>
-  </main>
 
+      <div id="bird2-pick" class="bird bird2 hidden">
+        <img class="bird-image" src="images/favorite-2_th.jpg" alt="Bird Picture">
+        <div class="bird-info">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quisquam iste maxime pariatur consequuntur error possimus dicta amet autem totam velit incidunt quod illum molestiae exercitationem explicabo minus nobis sunt?</p>
+        </div>
+      </div>
+        
 
-  <aside></aside>
-  <footer></footer>
+        <div id="bird3-pick" class="bird bird3 hidden">
+          <img class="bird-image" src="./images/favorite-3_th.jpg" alt="Bird Picture">
+          <div class="bird-info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quisquam iste maxime pariatur consequuntur error possimus dicta amet autem totam velit incidunt quod illum molestiae exercitationem explicabo minus nobis sunt?</p>
+          </div>
+        </div>
+    </main>
+  <footer>
+    <a class="footer-link" href="https://github.com/alexGalvan0/structuredPage" target="_blank">Visit my github</a> 
+  </footer>
+</div>
   
 </body>
 </html>
