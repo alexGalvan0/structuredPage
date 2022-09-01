@@ -54,13 +54,10 @@ main{
   flex-wrap: wrap;
 }
 
-main > img {
-  height: 400px;
-  width: 400px;
-}
-
 .bird-image {
   border-radius: 4px;
+  height: 400px;
+  width: 400px;
 }
 .bird-selector {
   font-size: 2rem;
@@ -69,6 +66,12 @@ main > img {
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
+}
+
+.bird-info {
+  border:5px solid #06BCC1;
+  border-radius: 4px;
+  padding: 5px;
 }
 
 
@@ -102,9 +105,16 @@ aside {
   cursor: pointer;
   font-size: 2rem;
 }
+input[type='radio'] { 
+  transform: scale(1.5); 
+}
 
 button:hover {
   text-decoration: underline;
+}
+
+label {
+  padding-left: 10px;
 }
 
 footer {
@@ -115,13 +125,6 @@ footer {
   align-items: center;
   position: relative;
 }
-
-.content-and-footer {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10rem;
-}
-
 bird-picker {
   cursor: pointer;
 }
