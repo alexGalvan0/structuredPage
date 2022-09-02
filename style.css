@@ -1,8 +1,18 @@
+
+/*
+  browser adds margin from default. 
+  Margins were set to have more controll
+*/
 *{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
+/*
+  Main index header
+  added some text decoration
+  used rem for a relative fontsize to browser default
+*/
 h1{
   text-align: center;
   text-decoration: underline;
@@ -10,6 +20,10 @@ h1{
   font-weight: 800;
 }
 
+/*
+  bird card subheader
+  styled and added color
+*/
 h2 {
   font-size: 1.5rem;
   background-color: #06BCC1;
@@ -17,16 +31,26 @@ h2 {
   text-align: center;
   border: 2px solid black;
 }
+
+/*
+
+*/
 h3 {
   font-size: 1rem;
   font-weight: 800;
   text-decoration: underline;
 }
 
+/*
+  changed page color to off white
+*/
 body{
   background-color: #F4EDEA;
 }
 
+/*
+
+*/
 nav {
   display: flex;
   flex-direction: row;
@@ -35,6 +59,10 @@ nav {
   margin-bottom: 10rem;
 }
 
+/*
+  used flexbox property to be able to place items inside .nav-container node relative to eachother. 
+
+*/
 .nav-container {
   height: 100%;
   display: flex;
@@ -48,20 +76,28 @@ nav {
   min-width: 10rem;
 }
 
+/*
+  take off any a tag styling from the entire site. 
+*/
 a {
   text-decoration: none;
 }
 
+/**/
 .nav-item {
   color: white;
   list-style: none;
 }
 
+/**/
 .nav-item:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
+/*
+  position relative to move item over slightly. 
+*/
 .nav-icon {
   height: 12rem;
   width: 12rem;
@@ -69,10 +105,12 @@ a {
   left: 50px;
 }
 
+/**/
 .header {
   margin-left: 15rem;
 }
 
+/**/
 main{
   display: flex;
   justify-content: center;
@@ -80,12 +118,16 @@ main{
   flex-wrap: wrap;
 }
 
-
+/**/
 .bird-image {
   border-radius: 4px;
   height: 400px;
   width: 400px;
 }
+
+/*
+  space around was used to be able to separate the radio buttons evenly. 
+*/
 .bird-selector {
   font-size: 2rem;
   display: flex;
@@ -94,6 +136,7 @@ main{
   height: 100%;
 }
 
+/**/
 .bird-info {
   border:5px solid #06BCC1;
   background-color: white;
@@ -103,7 +146,7 @@ main{
   min-width: 20rem;
 }
 
-
+/**/
 main{
   display: flex;
   justify-content: center;
@@ -112,6 +155,11 @@ main{
   margin-bottom: 45rem;
 
 }
+
+/*
+  flexwrap was used to make the page somewhat dynamic to different screen sizes.
+  gap allows for soace between the elements insie the container. 
+*/
 .bird {
   display: flex;
   flex-wrap: wrap;
@@ -122,6 +170,11 @@ main{
   margin-left: 15rem;
 }
 
+
+/*
+  positioned this absolute on the page
+  this takes it out of the natural page flow and allows for specific placement without affecting other elements. 
+*/
 aside {
   position: absolute;
   height: 50%;
@@ -131,6 +184,8 @@ aside {
   margin-left: 2rem;
 }
 
+
+/**/
 .button {
   border: none;
   list-style: none;
@@ -138,18 +193,28 @@ aside {
   cursor: pointer;
   font-size: 2rem;
 }
+
+/*
+  enlarged the radio buttons for ease of use.
+*/
 input[type='radio'] { 
   transform: scale(1.5); 
 }
 
+
+/**/
 button:hover {
   text-decoration: underline;
 }
 
+/**/
 label {
   padding-left: 10px;
 }
 
+/*
+  added flexbox to be able to stack the elements and center together. 
+*/
 footer {
   background-color: #F4D1AE;
   height: 4rem;
@@ -159,24 +224,36 @@ footer {
   flex-direction: column;
   position: relative;
 }
+
+/*
+  changing cursor when hovering over the bird picker elements. 
+*/
 .bird-picker {
   cursor: pointer;
 }
 
+/**/
 .footer-link {
   color: white;
   text-decoration: none;
   justify-content: flex-end;
 }
 
+/**/
 .footer-link:hover {
   color: black;
   text-decoration: underline;
 }
 
+/*
+  used this in the js file. 
+  When added to a class list, whatever element has this appened to it will not show up on the browser.
+*/
 .hidden {
   display: none;
 }
+
+/* moved label from radio button left so text doesnt get cut off from the enlarged radio button.*/
 span {
   margin-left: 5px;
 }
