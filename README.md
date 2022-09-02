@@ -1,8 +1,9 @@
-![trying page](https://joshhmiller.com/wp-content/uploads/2019/08/0-2019-08-29T213145.810.jpeg)
+
+![site screen shot](./images/siteScreenShot.jpg)
 
 # Structured page
 
-This is a page that I have created for the Awesome inc bootcamp week to.
+This is a page that I have created for the Awesome inc bootcamp week two.
 Some of the technologies include:
 
 - HTML5
@@ -29,12 +30,21 @@ During my debuging stage of sprint 2, this picture below shows what my week has 
 
 
 ## More Learns:
-Was able to use JS to loop through the dom and add and remove classNames. Used functions such as:
+Was able to use JS to loop through the DOM inorder to  add/remove classNames from HTML elements. Used functions such as:
 ```
-document.getElementsByClassName()
-//   This returns a list that is iterable in a forloop.
+document.getElementsByClassName('className');
+//    This returns an array that is iterable in a forloop.
 
-document.getElementbyId()
-// This returns a single DOM element.
+
+document.getElementbyId('classNamed');
+//     This returns a single DOM element.
+
+
+domElement.classList.add('classNameToAdd');
+//    This allows you to append a className to an HTML element.
+
+
+domElemet.classList.remove('classNameToRemove);
+//    This allows you to remove a className from an HTML element. 
 
 ```
