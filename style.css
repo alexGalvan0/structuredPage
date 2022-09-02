@@ -5,17 +5,21 @@
 
 h1{
   text-align: center;
+  text-decoration: underline;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   background-color: #06BCC1;
   color: white;
   text-align: center;
   border: 2px solid black;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1rem;
+  font-weight: 800;
   text-decoration: underline;
 }
 
@@ -65,12 +69,17 @@ a {
   left: 50px;
 }
 
+.header {
+  margin-left: 15rem;
+}
+
 main{
   display: flex;
   justify-content: center;
   flex-direction:row ;
   flex-wrap: wrap;
 }
+
 
 .bird-image {
   border-radius: 4px;
@@ -79,7 +88,6 @@ main{
 }
 .bird-selector {
   font-size: 2rem;
-  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -100,7 +108,7 @@ main{
   display: flex;
   justify-content: center;
   margin: 0 10rem;
-  margin-left: 25rem;
+  margin-left: 12rem;
   margin-bottom: 45rem;
 
 }
@@ -110,7 +118,8 @@ main{
   align-items: center;
   justify-content: center;
   gap:1rem;
-  margin-left: 2rem;
+  margin-right: 3rem;
+  margin-left: 15rem;
 }
 
 aside {
@@ -119,7 +128,7 @@ aside {
   width: 20rem;
   background-color: #C5D8D1;
   border-radius: 4px;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .button {
@@ -150,7 +159,7 @@ footer {
   flex-direction: column;
   position: relative;
 }
-bird-picker {
+.bird-picker {
   cursor: pointer;
 }
 
