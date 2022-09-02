@@ -18,6 +18,11 @@
   <title>Bird Watching</title>
 </head>
 <body>
+
+  <!--
+    Create nav tag as a container for a ul list that will act as the page's navigation bar.
+    The unordered list will have to include anchor tags that will navigate to different pages of the site. 
+  -->
   <nav>
     <img class="nav-icon" src="./images/dove.png" alt="bird icon">
     <ul class="nav-container">
@@ -28,6 +33,12 @@
     </ul>
   </nav>
 
+  <!--
+    Create a sidebar that allows you to pick each bird you want to see. 
+    each input tag embeded inside a label tag so the radio button has a label associated with it. 
+    Each radio button will trigger displayBird() js function.
+  -->
+
   <aside>
   <ul class="bird-selector">
     <label for="bird1-pick"><input type="radio" name="bird-picked" value="bird1-pick" class="bird-picker" checked="checked" onclick="displayBird()"><span>BIRD 1</span></label>
@@ -35,12 +46,20 @@
     <label for="bird3-pick"><input type="radio" name="bird-picked" value="bird3-pick" class="bird-picker" onclick="displayBird()"><span>BIRD 3</span></label>
   </ul>
   </aside>
+
+
+
+  <!--Header wrapped in a div for better manipulation in placement.-->
   <div class="header">
     <h1 style="text-decoration:underline ;">THE BEST BIRD PAGE</h1>
   </div>
     
     <br>
     <br>
+
+
+
+  <!--main content wrapped in a container for better placement manipulation using flexbox-->
   <div class="main-content-container">
     <main>
       <div id="bird1-pick" class="bird bird1 ">
@@ -100,10 +119,11 @@
             </p>
           </div>
         </div>
-
-
     </main>
   </div>
+
+
+  <!--Footer links with the _blank trarget attribut so page opens in new tab-->
   <footer>
       <a class="footer-link" href="https://github.com/alexGalvan0/structuredPage" target="_blank">Visit my github</a>
       <a class="footer-link" href="https://coolors.co/12263a-06bcc1-c5d8d1-f4edea-f4d1ae" target="_blank">Color Palette</a>
